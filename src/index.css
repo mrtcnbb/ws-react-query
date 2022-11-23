@@ -1,13 +1,60 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #222;
+  color: #ddd;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: darkslategrey;
+  border-bottom: 1px solid chartreuse;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-right: 10px;
+  height: 50px;
+}
+
+a {
+  color: rgb(3, 196, 154);
+  text-decoration: none;
+}
+
+.people-card-holder {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px auto;
+}
+
+.info-card {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.detail-card {
+  width: 400px;
+  padding-top: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+
+.cry-img {
+  margin-top: 100px;
+  clip-path: ellipse(closest-side farthest-side);
 }

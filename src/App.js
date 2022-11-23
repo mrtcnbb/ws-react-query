@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Navbar from "./components/Navbar";
+import People from './pages/People';
+import RQPeople from './pages/RQPeople';
+import Person from './pages/Person';
+import RQPaginatedPeople from './pages/RQPaginatedPeople';
+import RQPerson from './pages/RQPerson';
+import RQLivePeople from './pages/RQLivePeople';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/people' element={<People />} />
+          <Route path='/rq-people' element={<RQPeople />} />
+          <Route path='/paginated-people' element={<RQPaginatedPeople />} />
+          <Route path='/people/:id' element={<Person />} />
+          <Route path='/rq-people/:id' element={<RQPerson />} />
+          <Route path='/rq-live-people/' element={<RQLivePeople />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

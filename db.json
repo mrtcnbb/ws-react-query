@@ -1,0 +1,19 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive"
+    },
+    {
+      "id": 2,
+      "name": "Morty Smith",
+      "status": "Alive"
+    },
+    {
+      "id": 3,
+      "name": "Summer Smith",
+      "status": "Alive"
+    }
+  ]
+}
