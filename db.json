@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Rick Sanchez",
-      "status": "Alive"
+      "gender": "Male"
     },
     {
       "id": 2,
       "name": "Morty Smith",
-      "status": "Alive"
+      "gender": "Male"
     },
     {
       "id": 3,
       "name": "Summer Smith",
-      "status": "Alive"
+      "gender": "Female"
     }
   ]
 }
